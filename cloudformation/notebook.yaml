@@ -49,7 +49,7 @@ Resources:
             sudo -u ec2-user -i <<'EOF'
             
             conda create -n dask python=3.8.13 ipython --yes
-            python -m ipykernel install --user --name dask --display-name "Python (vietnguyen-dask)"
+            conda install -c conda-forge -n dask -y eccodes
             /home/ec2-user/anaconda3/envs/dask/bin/python -m pip install -r https://raw.githubusercontent.com/vietnguyengit/vietnguyen-dask/main/requirements.txt --upgrade
 
             EOF
