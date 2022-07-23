@@ -48,9 +48,8 @@ Resources:
             
             sudo -u ec2-user -i <<'EOF'
             
-            # install python libs
-            source /home/ec2-user/anaconda3/bin/activate mxnet_latest_p37
-            pip install -r https://raw.githubusercontent.com/vietnguyengit/vietnguyen-dask/main/requirements.txt
-            source /home/ec2-user/anaconda3/bin/deactivate
-            
+            conda create -n dask python=3.8.13 ipython --yes
+            python -m ipykernel install --user --name dask --display-name "Python (vietnguyen-dask)"
+            /home/ec2-user/anaconda3/envs/dask/bin/python -m pip install -r https://raw.githubusercontent.com/vietnguyengit/vietnguyen-dask/main/requirements.txt --upgrade
+
             EOF
