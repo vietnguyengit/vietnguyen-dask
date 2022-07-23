@@ -50,7 +50,6 @@ Resources:
             
             # install python libs
             source /home/ec2-user/anaconda3/bin/activate mxnet_latest_p37
-            conda install -c conda-forge -y nodejs
             pip install -r https://raw.githubusercontent.com/vietnguyengit/vietnguyen-dask/main/requirements.txt
             source /home/ec2-user/anaconda3/bin/deactivate
             
