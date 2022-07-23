@@ -1,0 +1,5 @@
+Resources:
+  notebook:
+    CloudformationTemplateURL: ../../vietnguyen-dask/cloudformation/notebook.yaml
+StackTags:
+  AutoOff: 'False'
