@@ -138,7 +138,7 @@ python -m ipykernel install --user --name dask --display-name "Python (vietnguye
 
 conda config --env --remove-key always_yes
 
-echo "source activate dask" > ~/.bashrc
+echo 'conda activate dask' >> ~/.bashrc
 
 conda deactivate
 
