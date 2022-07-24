@@ -138,7 +138,8 @@ python -m ipykernel install --user --name dask --display-name "Python (vietnguye
 
 conda config --env --remove-key always_yes
 
-echo 'conda activate dask' >> ~/.bashrc
+echo "conda activate dask" >> ~/.bashrc
+echo "export AWS_PROFILE=nonproduction-admin" >> ~/.bashrc
 
 conda deactivate
 
