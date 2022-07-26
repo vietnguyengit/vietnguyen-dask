@@ -36,6 +36,10 @@ RUN apt-get update && apt-get -y install gcc iputils-ping vim nano libsqlite3-de
 RUN python -m pip install --upgrade pip \
     && pip install --requirement /tmp/requirements.txt
 
+# install customised dask package
+RUN git clone -b viet-customised-dask https://github.com/vietnguyengit/dask
+RUN (cd dask && python -m pip install ".[complete]" --upgrade)
+
 COPY prepare.sh /usr/bin/prepare.sh
 
 RUN mkdir /opt/app
