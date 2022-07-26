@@ -4,7 +4,8 @@
 sudo apt update && sudo apt upgrade --yes
 sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
 sudo /etc/init.d/ssh restart
-sudo usermod --password $(echo password | openssl passwd -1 -stdin) ubuntu
+#TODO: passing password from args instead of temporary hard coded pw
+sudo usermod --password $(echo password | openssl passwd -1 -stdin) ubuntu #change your password
 sudo DEBIAN_FRONTEND="noninteractive" apt install -y xfce4
 sudo apt install -y xrdp xfce4-goodies tightvncserver
 echo xfce4-session> $HOME/.xsession
