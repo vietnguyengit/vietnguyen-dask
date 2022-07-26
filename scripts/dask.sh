@@ -135,6 +135,10 @@ python -m pip install pip-tools
 python -m piptools compile dask-requirements.in
 pip install -r dask-requirements.txt
 
+
+git clone -b viet-customised-dask https://github.com/vietnguyengit/dask
+(cd dask && python -m pip install ".[complete]" --upgrade)
+
 python -m ipykernel install --user --name dask --display-name "Python (vietnguyen-dask)"
 
 conda config --env --remove-key always_yes
