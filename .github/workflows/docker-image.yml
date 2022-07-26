@@ -2,7 +2,7 @@ name: Build CI
 
 on:
   push:
-    branches: ['main']
+    branches: ['main', 'customised-dask-docker']
   workflow_dispatch:
 
 env:
