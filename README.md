@@ -5,6 +5,8 @@
 ### 1. Cloudformation
 Use `stackman` or `ansible` to deploy a `SageMaker` notebook instance with ready to use environment including Python 3.8.13 and its dependencies.
 
+:warning: Select `conda_dask` as your notebook environment.
+
 :warning: `SageMaker` cannot leave the notebook running for countless hours without discruption/kernel timeout issues. And you have to keep your browser open while the notebook running. 
 
 
