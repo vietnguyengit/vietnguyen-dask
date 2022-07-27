@@ -7,6 +7,8 @@ Use `stackman` or `ansible` to deploy a `SageMaker` notebook instance with ready
 
 :warning: Select `conda_dask` as your notebook environment.
 
+:warning: Make sure the `source` and `destination` buckets you want to use are permitted in the `IAM role` for creating the `SageMaker` notebook instance.
+
 :warning: `SageMaker` cannot leave the notebook running for countless hours without discruption/kernel timeout issues. And you have to keep your browser open while the notebook running. 
 
 
@@ -26,3 +28,6 @@ The script will automate many installation processes for running the notebook wi
 - Use `Remmina` to access the created instance via `RDP` protocol.
 
 - Use the `Terminal` and run `jupyter lab`
+
+### 3. Fargate cluster
+:warning: Make sure you create a `IAM role` for creating the cluster with permissions to access `S3` buckets and `ECS services`.
