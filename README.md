@@ -30,4 +30,4 @@ The script will automate many installation processes for running the notebook wi
 - Use the `Terminal` and run `jupyter lab`
 
 ### 3. Fargate cluster
-:warning: Make sure you create a `IAM role` for creating the cluster with permissions to access `S3` buckets and `ECS services`.
+:warning: Make sure you create an `IAM role` for creating the cluster with permissions to access `S3` buckets and `ECS services`.
