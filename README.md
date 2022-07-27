@@ -22,3 +22,5 @@ The script will automate many installation processes for running the notebook wi
 - Then `cd vietnguyen-dask/scripts` and run `chmod +x dask.sh`, and finally run `./dask.sh` (:warning: **NOTE**: you might want to change password for RDP connection, run `nano dask.sh`)
 
 - Use `Remmina` to access the created instance via `RDP` protocol.
+
+- Use the `Terminal` and run `jupyter lab`
