@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install -u unzip
+
 # AWS CLI
 if [[ -f ./awscliv2.zip ]]
 then
