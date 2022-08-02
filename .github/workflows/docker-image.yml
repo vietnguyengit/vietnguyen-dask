@@ -2,7 +2,7 @@ name: Build CI
 
 on:
   push:
-    branches: ['main']
+    branches: ['main', 'prefect-dask']
   workflow_dispatch:
 
 env:
