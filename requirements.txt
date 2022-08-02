@@ -114,7 +114,6 @@ parso>=0.8.3
 partd>=1.2.0
 pexpect>=4.8.0
 pg8000>=1.22.1
-pickle5>=0.0.11
 pickleshare>=0.7.5
 pillow>=9.2.0
 ply>=3.11
