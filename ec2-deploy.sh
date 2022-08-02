@@ -35,4 +35,4 @@ sudo apt-get install -y docker-compose
 sudo chmod 666 /var/run/docker.sock
 sudo usermod -aG docker $USER
 
-exec $SHELL
+sudo reboot
