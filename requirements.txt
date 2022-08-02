@@ -130,7 +130,7 @@ dask[complete]==2022.7.1
     #   dask-cloudprovider
     #   distributed
     #   xarray
-dask-cloudprovider==2022.7.1
+dask-cloudprovider==2022.5.0
     # via -r dask-requirements.in
 dask-labextension==5.2.0
     # via -r dask-requirements.in
