@@ -1,8 +1,8 @@
 ARG BASE_CONTAINER=condaforge/mambaforge:latest
 FROM $BASE_CONTAINER
 
-ARG python=3.8.13
-ARG dask=2022.1.1
+ARG python=3.9.12
+ARG dask=2022.7.1
 
 SHELL ["/bin/bash", "-c"]
 
@@ -18,8 +18,8 @@ RUN mamba install -y \
     cytoolz \
     dask==${DASK_VERSION} \
     lz4==3.1.10 \
-    numpy==1.21.5 \
-    pandas==1.3.4 \
+    numpy==1.22.4 \
+    pandas==1.4.3 \
     tini==0.18.0 \
     cachey \
     streamz \
