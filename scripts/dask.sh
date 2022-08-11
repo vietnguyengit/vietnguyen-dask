@@ -1,4 +1,7 @@
 #!/bin/bash
+"""
+Author: Viet Nguyen
+"""
 
 # RDP client
 sudo apt update && sudo apt upgrade --yes
